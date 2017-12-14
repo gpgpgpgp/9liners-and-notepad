@@ -12,5 +12,6 @@ nln_afm_fnc_previousPage =
 
 	[_pagetext] call nln_afm_fnc_fill;
 
-	hint format ["PAGE %1/20", nln_afm_currentPage];
+	playSound "nln_NextPage";
+	hintSilent format ["PAGE %1/20", nln_afm_currentPage];
 };
