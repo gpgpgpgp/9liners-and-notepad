@@ -12,5 +12,6 @@ nln_cas_check_in_fnc_nextPage =
 
 	[_pagetext] call nln_cas_check_in_fnc_fill;
 
-	hint format ["PAGE %1/20", nln_cas_check_in_currentPage];
+	playSound "nln_NextPage";
+	hintSilent format ["PAGE %1/20", nln_cas_check_in_currentPage];
 };
